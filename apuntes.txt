@@ -1,0 +1,29 @@
+1) Creamos nuestro entornoo virtual
+
+python -m venv env
+
+
+Opcional: Si no has cambiado los permisos de tu terminal para ejecutar la activacion del entorno,
+corre el siguiente comando (Windows)
+
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+2) Activar entorno despues de crear
+
+.\env\Scripts\activate
+
+3) Desactivar el entorno
+
+deactivate
+
+4) Archivo que gestiona todas las dependencias y en que versiones se necesitan (Nos ayuda tambien para instalar todas las dependencias de una sola vez y no una por una)
+
+pip freeze > requirements.txt
+
+5) Instalar las dependencias necesarias para contribuir más rápido en proyectos
+
+pip install -r .\requirements.txt
+
+6) Para que VSCODE y el interprete de Python reconozca nuestro entorno virtual, debemos seleccionar el interprete de la siguiente ruta
+
+.\env\Scripts\python.exe
